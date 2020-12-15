@@ -1,0 +1,2 @@
+[global.databases]
+issues_crawler = {url = "postgres://issues_crawler:password@localhost:5432/issues_crawler"}

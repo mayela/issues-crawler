@@ -1,0 +1,17 @@
+[package]
+name = "issues-crawler"
+version = "0.1.0"
+authors = ["Mar Sanchez <mayela0x14@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.6"
+serde = {version = "1.0.118", features = ["derive"] }
+serde_json = "1.0.60"
+
+[dependencies.rocket_contrib]
+version = "0.4.6"
+default-features = false
+features = ["json", "diesel_postgres_pool"]
